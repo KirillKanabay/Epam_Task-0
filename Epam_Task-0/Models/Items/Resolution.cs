@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return $"Resolution: {Width} x {Height}";
+            return $"{Width} x {Height}";
         }
     }
 }

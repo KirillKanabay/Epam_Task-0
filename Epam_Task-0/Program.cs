@@ -1,4 +1,5 @@
 ﻿using Epam_Task_0.Interfaces;
+using Epam_Task_0.Interfaces.Generic;
 using Epam_Task_0.Models;
 using Epam_Task_0.Models.Lists;
 using Epam_Task_0.Models.Players;
@@ -20,16 +21,13 @@ namespace Epam_Task_0
             mediateka.AddItem(img2);
             mediateka.AddItem(img3);
 
-            IMediatekaList imgList = new MediatekaList(1, 
-                new List<MediatekaItem>() 
-                {
-                    img1,
-                    img2,
-                    img3
-                }
-            );
+            IMediatekaList<Image> images = new MediatekaList<Image>(id: 1);
 
-            mediateka.AddList(imgList);
+            images.Add(img1);
+            images.Add(img2);
+            images.Add(img3);
+
+            mediateka.AddList(images);
 
             IPlayer player = new MediatekaPlayer();
 

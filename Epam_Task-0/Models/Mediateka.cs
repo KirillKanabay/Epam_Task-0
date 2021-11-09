@@ -1,4 +1,6 @@
 ﻿using Epam_Task_0.Interfaces;
+using Epam_Task_0.Interfaces.Generic;
+using Epam_Task_0.Models.Lists;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,12 +38,16 @@ namespace Epam_Task_0.Models
         {
             _items.Add(item.Id, item);
         }
-
         public void AddList(IMediatekaList list)
         {
             _lists.Add(list.Id, list);
         }
-
+        public void AddList<TItem>(IMediatekaList<TItem> list) 
+            where TItem : MediatekaItem
+        {
+            var mediatekaList = (MediatekaList)(MediatekaList<TItem>)list;
+            AddList(mediatekaList);
+        }
         public void RemoveItem(int id)
         {
             if (_items.ContainsKey(id))
@@ -49,7 +55,6 @@ namespace Epam_Task_0.Models
                 _items.Remove(id);
             }
         }
-
         public void RemoveList(int id)
         {
             if (_lists.ContainsKey(id))
@@ -57,22 +62,18 @@ namespace Epam_Task_0.Models
                 _lists.Remove(id);
             }
         }
-
         public MediatekaItem FindItemById(int id)
         {
             return _items[id];
         }
-
         public IMediatekaList FindListById(int id)
         {
             return _lists[id];
         }
-
         public MediatekaItem FindItem(Func<MediatekaItem, bool> predicate)
         {
             return _items.Values.FirstOrDefault(predicate);
         }
-
         public IMediatekaList FindList(Func<IMediatekaList, bool> predicate)
         {
             return _lists.Values.FirstOrDefault(predicate);
