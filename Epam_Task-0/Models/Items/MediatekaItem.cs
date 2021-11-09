@@ -1,6 +1,4 @@
-﻿using Epam_Task_0.Interfaces;
-
-namespace Epam_Task_0.Models
+﻿namespace Epam_Task_0.Models
 {
     public abstract class MediatekaItem
     {

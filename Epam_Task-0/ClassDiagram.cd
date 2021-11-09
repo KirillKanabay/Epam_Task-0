@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Epam_Task_0.Models.Image" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Items\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.MediatekaItem" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Items\MediatekaItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.MusicTrack" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Items\MusicTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.Video" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Items\Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.Lists.MediatekaList&lt;TItem&gt;" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAABAAAAAABAAAABAEAAAGAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Lists\MediatekaList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epam_Task_0.Models.Players.BasePlayer&lt;TItem&gt;" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAFAAAAAAAAABAAAAAqAAAAAAAAAA=</HashCode>
+      <FileName>Models\Players\BasePlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epam_Task_0.Models.Players.ImagePlayer" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Players\ImagePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.Players.MusicTrackPlayer" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Players\MusicTrackPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.Players.VideoPlayer" Collapsed="true">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Players\VideoPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Models.Mediateka" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgBBAAAAAAAAAAAgBAAAAAEQAEAAAQAABA=</HashCode>
+      <FileName>Models\Mediateka.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_items" />
+      <Field Name="_lists" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Epam_Task_0.Interfaces.Generic.IMediatekaList&lt;TItem&gt;">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Generic\IMediatekaList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epam_Task_0.Interfaces.Generic.IPlayer&lt;T&gt;">
+    <Position X="10.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Generic\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epam_Task_0.Interfaces.IMediateka" Collapsed="true">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgBBAAAAAAAAAAAgAAAAAAEAAEAAAQAABA=</HashCode>
+      <FileName>Interfaces\IMediateka.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epam_Task_0.Interfaces.IMediatekaList">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMediatekaList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epam_Task_0.Interfaces.IPlayer">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

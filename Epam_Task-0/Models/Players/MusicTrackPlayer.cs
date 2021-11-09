@@ -1,15 +1,10 @@
 ﻿using System;
-using Epam_Task_0.Interfaces;
-using Epam_Task_0.Interfaces.Generic;
 
 namespace Epam_Task_0.Models.Players
 {
-    public class MusicTrackPlayer : IPlayer<MusicTrack>
-    {
-        public MusicTrack CurrentItem { get; private set; }
-        public bool IsActive => CurrentItem != null;
-        
-        public void Play(MusicTrack musicTrack)
+    public class MusicTrackPlayer : BasePlayer<MusicTrack>
+    {        
+        public override void Play(MusicTrack musicTrack)
         {
             CurrentItem = musicTrack;
 
@@ -18,19 +13,6 @@ namespace Epam_Task_0.Models.Players
                                        $"Duration: {CurrentItem.Duration}");
 
             Stop();
-        }
-
-        public void Play(IMediatekaList<MusicTrack> musicTracks)
-        {
-            foreach (var musicTrack in musicTracks)
-            {
-                Play(musicTrack);
-            }
-        }
-
-        public void Stop()
-        {
-            CurrentItem = null;
         }
     }
 }

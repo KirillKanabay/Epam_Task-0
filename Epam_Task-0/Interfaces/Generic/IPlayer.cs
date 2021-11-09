@@ -2,13 +2,11 @@
 
 namespace Epam_Task_0.Interfaces.Generic
 {
-    public interface IPlayer<T> 
+    public interface IPlayer<T> : IPlayer
         where T : MediatekaItem
     {
-        T CurrentItem { get; }
-        bool IsActive { get; }
+        new T CurrentItem { get; }
         void Play(T item);
         void Play(IMediatekaList<T> list);
-        void Stop();
     }
 }

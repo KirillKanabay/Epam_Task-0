@@ -3,7 +3,6 @@ using Epam_Task_0.Interfaces.Generic;
 using Epam_Task_0.Models;
 using Epam_Task_0.Models.Lists;
 using Epam_Task_0.Models.Players;
-using System.Collections.Generic;
 
 namespace Epam_Task_0
 {
@@ -13,9 +12,10 @@ namespace Epam_Task_0
         {
             IMediateka mediateka = new Mediateka();
 
-            Image img1 = new Image(1, "1.png", new Resolution(1920, 1080));
-            Image img2 = new Image(2, "2.png", new Resolution(1920, 1080));
-            Image img3 = new Image(3, "3.png", new Resolution(1920, 1080));
+            Image img1 = new Image(id: 1, "1.png", new Resolution(1920, 1080));
+            Image img2 = new Image(id: 2, "2.png", new Resolution(1920, 1080));
+            Image img3 = new Image(id: 3, "3.png", new Resolution(1920, 1080));
+            MusicTrack mt = new MusicTrack(id: 4, "mp3_1", 1.2);
 
             mediateka.AddItem(img1);
             mediateka.AddItem(img2);
@@ -29,9 +29,12 @@ namespace Epam_Task_0
 
             mediateka.AddList(images);
 
-            IPlayer player = new MediatekaPlayer();
+            BasePlayer<Image> player = new ImagePlayer();
 
-            player.Play(mediateka.FindListById(1));
+            player.Play(images);
+
+            IPlayer player1 = new MusicTrackPlayer();
+            player1.Play(images);
         }
     }
 }
