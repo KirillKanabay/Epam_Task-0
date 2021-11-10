@@ -1,8 +1,8 @@
-﻿using Epam_Task_0.Interfaces;
+﻿using Epam_Task_0.Factories;
+using Epam_Task_0.Interfaces;
 using Epam_Task_0.Interfaces.Generic;
 using Epam_Task_0.Models;
 using Epam_Task_0.Models.Lists;
-using Epam_Task_0.Models.Players;
 
 namespace Epam_Task_0
 {
@@ -29,12 +29,20 @@ namespace Epam_Task_0
 
             mediateka.AddList(images);
 
-            BasePlayer<Image> player = new ImagePlayer();
+            AbstractPlayerFactory factory = new PlayerFactrory();
 
-            player.Play(images);
+            IPlayer player1 = factory.CreatePlayer(images);
 
-            IPlayer player1 = new MusicTrackPlayer();
             player1.Play(images);
+
+            IMediatekaList<MusicTrack> music = new MediatekaList<MusicTrack>(id: 2);
+            music.Add(new MusicTrack(4, "1", 1));
+            music.Add(new MusicTrack(5, "2", 2));
+            music.Add(new MusicTrack(6, "3", 3));
+
+            IPlayer player2 = factory.CreatePlayer(music);
+
+            player2.Play(music);
         }
     }
 }

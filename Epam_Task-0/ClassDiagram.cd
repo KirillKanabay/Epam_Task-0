@@ -28,7 +28,7 @@
       <FileName>Models\Items\Video.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Epam_Task_0.Models.Lists.MediatekaList&lt;TItem&gt;" BaseTypeListCollapsed="true">
+  <Class Name="Epam_Task_0.Models.Lists.MediatekaList&lt;TItem&gt;" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="5.25" Y="6.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAICAAAAAAAAABAAAAAABAAAABAEAAAGAAAAAAAAAAA=</HashCode>
@@ -77,8 +77,25 @@
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="Epam_Task_0.Interfaces.Generic.IMediatekaList&lt;TItem&gt;">
-    <Position X="3.25" Y="9" Width="1.5" />
+  <Class Name="Epam_Task_0.Factories.AbstractPlayerFactory" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\AbstractPlayerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epam_Task_0.Factories.PlayerFactrory" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\PlayerFactrory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Epam_Task_0.Interfaces.Generic.IMediatekaList&lt;TItem&gt;" Collapsed="true">
+    <Position X="3.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Generic\IMediatekaList.cs</FileName>
@@ -98,7 +115,7 @@
       <FileName>Interfaces\IMediateka.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Epam_Task_0.Interfaces.IMediatekaList">
+  <Interface Name="Epam_Task_0.Interfaces.IMediatekaList" Collapsed="true">
     <Position X="3.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAICAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

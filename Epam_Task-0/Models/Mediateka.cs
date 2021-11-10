@@ -64,6 +64,7 @@ namespace Epam_Task_0.Models
         {
             return _lists[id];
         }
+
         public MediatekaItem FindItem(Func<MediatekaItem, bool> predicate)
         {
             return _items.Values.FirstOrDefault(predicate);
