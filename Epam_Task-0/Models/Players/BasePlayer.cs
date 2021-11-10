@@ -27,7 +27,7 @@ namespace Epam_Task_0.Models.Players
         {
             if (item is TItem)
             {
-                Play(item as TItem);
+                Play((TItem)item);
             }
             else
             {

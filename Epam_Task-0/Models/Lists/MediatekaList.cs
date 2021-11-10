@@ -33,7 +33,7 @@ namespace Epam_Task_0.Models.Lists
         {
             if(item is TItem)
             {
-                Add(item as TItem);
+                Add((TItem)item);
             }
             else
             {
@@ -44,7 +44,7 @@ namespace Epam_Task_0.Models.Lists
         {
             if (item is TItem)
             {
-                Remove(item as TItem);
+                Remove((TItem)item);
             }
             else
             {
