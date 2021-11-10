@@ -14,5 +14,9 @@ namespace Epam_Task_0.Interfaces
         IMediatekaList FindListById(int id);
         void RemoveItem(int id);
         void RemoveList(int id);
+        void Play(MediatekaItem item);
+        void Play(IMediatekaList list);
+        void PlayItemById(int id);
+        void PlayListById(int id);
     }
 }
